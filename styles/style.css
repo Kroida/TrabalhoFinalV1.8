@@ -1,0 +1,921 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    background-image: linear-gradient(147deg, #00ff40 -300%, #3c3f41 50%, #272727 100%, #414547 100%);
+    position: relative;
+}
+
+
+
+/* Header ------------------------------------------------------------- */
+
+header {
+    background-color: #3c3f41;
+    width: 100%;
+    height: 12vh;
+}
+
+.logo img {
+    margin: 1vh 3vh 1vh 3vh;
+    padding: 1vh;
+    width: 5vh;
+}
+
+.cabecalhoInformacao {
+    background-color: #272727;
+    padding: 3vh;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.3vh;
+    box-shadow: 0vh 0.5vh 0.5vh #00ff40;
+}
+
+.cabecalhoInformacao a {
+    color: #00ff40;
+    display: inline-block;
+    margin: 1vh;
+    padding: 0 6vh;
+    transition: 0.2s;
+}
+
+.cabecalhoInformacao a:hover {
+    transform: scale(1.1);
+}
+
+
+
+/* Footer ------------------------------------------------------------- */
+
+footer {
+    background-color: #272727;
+    width: 100%;
+    height: 25vh;
+}
+
+.logos {
+    box-sizing: border-box;
+    margin: 1vh 30vh 1vh 30vh;
+    padding: 2vh;
+    width: 80%;
+}
+
+.logos img {
+    padding: 0vh 5vh;
+    width: 25vh;
+    height: 20vh;
+}
+
+.logos a {
+    display: inline-block;
+    transition: 0.2s;
+}
+
+.logos a:hover {
+    transform: scale(1.1);
+}
+
+
+
+/* Index ------------------------------------------------------------- */
+
+.boasVindas {
+    color: #00ff40;
+    margin: 12vh 0 0 0;
+}
+
+.boasVindas h1 {
+    text-align: center;
+    font-size: 10vh;
+    font-style: italic;
+}
+
+.boasVindas img {
+    width: 15vh;
+}
+
+.indexMenu {
+    margin: 8vh auto 20vh auto;
+    width: 30%;
+    text-align: center;
+}
+
+.indexMenuInformacao {
+    background-color: #272727;
+    color: #00ff40;
+    padding: 2vh;
+    height: 80vh;
+    border-radius: 5vh;
+}
+
+.indexMenuInformacao h2 {
+    margin: 3vh auto;
+    font-size: 5vh;
+}
+
+.indexEmail {
+    margin: 7vh auto;
+}
+
+.indexSenha {
+    margin: 10vh auto 3vh auto;
+}
+
+.indexMenuInformacao form input {
+    background-color: #414547;
+    color: #fafafa;
+    width: 70%;
+    height: 3.5vh;
+    text-align: center;
+    font-size: 2.5vh;
+    border-radius: 1vh;
+}
+
+.indexMenuInformacao form input::placeholder {
+    color: #969696;
+}
+
+.indexMenuInformacao form label {
+    font-size: 3vh;
+}
+
+.indexMenuInformacao form button {
+    background-color: #414547;
+    color: #969696;
+    margin: 1vh auto;
+    padding: 1.5vh 10vh 1.5vh 10vh;
+    font-size: 2.5vh;
+    font-weight: bold;
+    border-radius: 2vh;
+    transition: 0.2s;
+}
+
+.indexMenuInformacao form button:hover {
+    background-color: #969696;
+    color: #414547;
+    cursor: grab;
+    transform: scale(1.1);
+}
+
+.olhadinha {
+    background-color: #272727;
+    color: #00ff40;
+    padding: 2vh 3vh 2vh 3vh;
+    bottom: 45vh;
+    right: 12vh;
+    font-size: 2vh;
+    border-radius: 5vh;
+    transition: 0.2s;
+    position: absolute;
+}
+
+.olhadinha:hover {
+    transform: scale(1.1);
+}
+
+.olhadinha img {
+    width: 5vh;
+    vertical-align: middle;
+}
+
+
+.quemSomos {
+    background-color: #272727;
+    color: #00ff40;
+    padding: 2vh 3vh 2vh 3vh;
+    bottom: 45vh;
+    left: 12vh;
+    font-size: 2vh;
+    border-radius: 5vh;
+    transition: 0.2s;
+    position: absolute;
+}
+
+.quemSomos:hover {
+    transform: scale(1.1);
+}
+
+
+
+/* About ------------------------------------------------------------- */
+
+.aboutAviso {
+    color: green;
+    margin: 15vh auto 10vh auto;
+    text-align: center;
+}
+
+.aboutAviso h2 {
+    margin: 0 auto 2vh auto;
+    font-size: 10vh;
+}
+
+.aboutAviso strong {
+    color: #00ff40;
+}
+
+.qualProduto {
+    color: #00ff40;
+    margin: 0vh 0 0 0;
+}
+
+.qualProduto h1 {
+    text-align: center;
+    font-size: 5vh;
+}
+
+.aboutMenu {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.aboutMenuInformacao {
+    margin: 5vh auto 30vh auto;
+    width: max-content;
+}
+
+.aboutMenuInformacao a {
+    background-color: #ffffff;
+    display: inline-block;
+    margin: 5vh 4.5vh;
+    padding: 3vh;
+    border: 0.5vh solid #272727;
+    transition: 0.2s;
+}
+
+.aboutMenuInformacao a:hover {
+    transform: scale(1.1);
+}
+
+.aboutMenuInformacao img {
+    width: 25vh;
+}
+
+
+/* aboutProdutos(todos) ------------------------------------------------------------- */
+
+.aboutProdutosMenu {
+    margin: 10vh auto 5vh auto;
+    width: 100%;
+}
+
+.aboutProdutosMenuInformacao {
+    padding: 10vh;
+    text-align: center;
+    border-radius: 5vh;
+    position: relative;
+}
+
+.aboutProdutosMenuInformacao h1 {
+    margin-bottom: 9vh;
+    font-size: 7vh;
+    font-style: italic;
+}
+
+.aboutProdutosMenuInformacao a {
+    background-color: #272727;
+    display: inline-block;
+    margin: 3vh;
+    padding: 2vh;
+    width: 30vh;
+    height: max-content;
+    border: 0.5vh solid black;
+    transition: 0.2s;
+}
+
+.aboutProdutosMenuInformacao a:hover {
+    transform: scale(1.1);
+}
+
+.aboutProdutosMenuInformacao img {
+    width: 30vh;
+    height: 25vh;
+}
+
+
+/* AboutProdutos - Cores ------------------------------------------------------------- */
+
+.aboutProdutosCorDoTexto {
+    color: #00c100;
+}
+
+.aboutProdutosCorDoTexto a {
+    color: #00c100;
+}
+
+.aboutProdutosCorDoTexto .produtoPreco span {
+    border-bottom: 0.2vh solid #00c100;  
+}
+
+.aboutProdutosCorDeFundo {
+    background-image: linear-gradient(147deg, #00c100 -300%, #3c3f41 50%, #272727 100%, #414547 100%);
+}
+
+.aboutProdutosCorDoCabecalho a {
+    color: #00c100;
+}
+
+.aboutProdutosCorDoCabecalho nav {
+    box-shadow: 0vh 0.5vh 0.5vh #00c100;
+}
+
+
+/* aboutProdutos0 - Cores ------------------------------------------------------------- */
+
+.aboutProdutos0CorDoTexto {
+    color: #f70813;
+}
+
+.aboutProdutos0CorDoTexto a {
+    color: #f70813;
+}
+
+.aboutProdutos0CorDoTexto .produtoPreco span {
+    border-bottom: 0.2vh solid #f70813;  
+}
+
+.aboutProdutos0CorDeFundo {
+    background-image: linear-gradient(147deg, #f70813 -300%, #3c3f41 50%, #272727 100%, #414547 100%);
+}
+
+.aboutProdutos0CorDoCabecalho a {
+    color: #f70813;
+}
+
+.aboutProdutos0CorDoCabecalho nav {
+    box-shadow: 0vh 0.5vh 0.5vh #f70813;
+}
+
+
+/* AboutProdutos1 - Cores ------------------------------------------------------------- */
+
+.aboutProdutos1CorDoTexto {
+    color: #2597d4;
+}
+
+.aboutProdutos1CorDoTexto a {
+    color: #2597d4;
+}
+
+.aboutProdutos1CorDoTexto .produtoPreco span {
+    border-bottom: 0.2vh solid #2597d4;  
+}
+
+.aboutProdutos1CorDeFundo {
+    background-image: linear-gradient(147deg, #2597d4 -300%, #3c3f41 50%, #272727 100%, #414547 100%);
+}
+
+.aboutProdutos1CorDoCabecalho a {
+    color: #2597d4;
+}
+
+.aboutProdutos1CorDoCabecalho nav {
+    box-shadow: 0vh 0.5vh 0.5vh #2597d4;
+}
+
+
+/* aboutProdutos2 - Cores ------------------------------------------------------------- */
+
+.aboutProdutos2CorDoTexto {
+    color: #f39b37;
+}
+
+.aboutProdutos2CorDoTexto a {
+    color: #f39b37;
+}
+
+.aboutProdutos2CorDoTexto .produtoPreco span {
+    border-bottom: 0.2vh solid #f39b37;  
+}
+
+.aboutProdutos2CorDeFundo {
+    background-image: linear-gradient(147deg, #f39b37 -300%, #3c3f41 50%, #272727 100%, #414547 100%);
+}
+
+.aboutProdutos2CorDoCabecalho a {
+    color: #f39b37;
+}
+
+.aboutProdutos2CorDoCabecalho nav {
+    box-shadow: 0vh 0.5vh 0.5vh #f39b37;
+}
+
+
+
+/* aboutProduto ------------------------------------------------------------- */
+
+.aboutProdutoMenu {
+    color: #00ff40;
+    margin: 20vh auto 20vh auto;
+    width: 80%;
+}
+
+.aboutProdutoMenuInformacao {
+    margin: 0 auto;
+    width: 95%;
+    height: max-content;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5vh;
+}
+
+
+/* produtoPreco ------------------------------------------------------------- */
+
+.produtoPreco {
+    display: inline-block;
+    margin: 1vh;
+    padding: 1vh;
+}
+
+.produtoPreco p {
+    background-color: #272727;
+    float: right;
+    margin: 8vh 6.5vh 8vh 6.5vh;
+    padding: 15vh;
+    width: 20vh;
+    height: 30vh;
+    text-align: center;
+    font-size: 3vh;
+    font-weight: bold;
+    border-radius: 3vh;
+}
+
+.produtoPreco p span {
+    display: block;  
+    margin: 5vh 0;
+    border-bottom: 0.2vh solid #00ff40;  
+}
+
+.produtoPreco p a {
+    background-color: #414547;
+    color: #969696;
+    display: block;
+    padding: 1vh 5vh;
+    font-size: 2vh;
+    font-weight: bold;
+    border-radius: 2vh;
+    transition: 0.2s;
+}
+
+.produtoPreco p a:hover {
+    background-color: #969696;
+    color: #414547;
+    cursor: grab;
+    transform: scale(1.1);
+}
+
+.produtoPreco img {
+    margin-left: 15vh;
+    width: 70vh;
+    height: 75vh;
+    border-radius: 3vh;
+    box-shadow: -0.8vh 0.8vh 0.8vh #272727;
+}
+
+
+/* aboutProduto - Descrição ------------------------------------------------------------- */
+
+.produtoDescricao {
+    background-color: #272727;
+    margin: 5vh auto 5vh auto;
+    padding: 10vh;
+    width: 80%;
+    height: max-content;
+    border-radius: 5vh;
+}
+
+.produtoDescricao pre {
+    white-space: pre-wrap;
+}
+
+
+
+/* aboutComprarProduto ------------------------------------------------------------- */
+
+.aboutComprarProdutoForms {
+    background-color: #272727;
+    color: #00ff40;
+    margin: 20vh auto 20vh auto;
+    padding: 5vh 10vh 10vh 10vh;
+    width: 30%;
+    text-align: center;
+    border-radius: 5vh;
+}
+
+.aboutComprarProdutoForms form {
+    padding: 1vh;
+    border-radius: 5vh;
+}
+
+.aboutComprarProdutoInput {
+    background-color: #414547;
+    color: #fafafa;
+    margin: 2vh auto 5vh auto;
+    width: 70%;
+    height: 4vh;
+    text-align: center;
+    font-size: 2.5vh;
+    border-radius: 1vh;
+}
+
+.aboutComprarProdutoInput::placeholder {
+    color: #969696;
+}
+
+.aboutComprarProdutoLabel {
+    display: block;
+    font-size: 3vh;
+}
+
+.aboutComprarProdutoMetodo label {
+    display: inline-block;
+    margin: 2vh 3vh 0 3vh;
+}
+
+.aboutComprarProdutoForms form button {
+    background-color: #414547;
+    color: #969696;
+    margin: 3vh auto;
+    padding: 1.5vh 10vh 1.5vh 10vh;
+    font-size: 2.5vh;
+    font-weight: bold;
+    border-radius: 2vh;
+    transition: 0.2s;
+}
+
+.aboutComprarProdutoForms form button:hover {
+    background-color: #969696;
+    color: #414547;
+    cursor: grab;
+    transform: scale(1.1);
+}
+
+
+
+/* queGpu ------------------------------------------------------------- */
+
+.queGpuTitulo {
+    color: #00ff40;
+    margin: 15vh 0 0 0;
+}
+
+.queGpuTitulo h1 {
+    text-align: center;
+    font-size: 10vh;
+    font-style: italic;
+}
+
+.queGpuMenu {
+    margin: 8vh auto 20vh auto;
+    width: 70%;
+}
+
+.queGpuMenuInformacao {
+    background-color: #272727;
+    padding: 10vh;
+    text-align: center;
+    border-radius: 5vh;
+    position: relative;
+}
+
+.queGpuMenuInformacao p {
+    color: #d8d8d8;
+    width: 70%;
+    font-weight: 500;
+    text-shadow: 
+    -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+.queGpuMenuInformacao img {
+    width: 30vh;
+    height: 25vh;
+    box-shadow: 0.5vh 0.5vh 1vh #000;
+    position: absolute;
+    top: 0;
+    right: 9vh;
+}
+
+.queGpuNvidia {
+    margin: 10vh 0;
+}
+
+.queGpuAmd {
+    margin: 40vh 0;
+}
+
+
+
+/* queCpu ------------------------------------------------------------- */
+
+.queCpuTitulo {
+    color: #00ff40;
+    margin: 15vh 0 0 0;
+}
+
+.queCpuTitulo h1 {
+    text-align: center;
+    font-size: 10vh;
+    font-style: italic;
+}
+
+.queCpuMenu {
+    margin: 8vh auto 20vh auto;
+    width: 70%;
+}
+
+.queCpuMenuInformacao {
+    background-color: #272727;
+    padding: 10vh;
+    text-align: center;
+    border-radius: 5vh;
+    position: relative;
+}
+
+.queCpuMenuInformacao p {
+    color: #d8d8d8;
+    width: 70%;
+    font-weight: 500;
+    text-shadow: 
+    -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+.queCpuMenuInformacao img {
+    width: 30vh;
+    height: 25vh;
+    box-shadow: 0.5vh 0.5vh 1vh #000;
+    position: absolute;
+    top: 0;
+    right: 9vh;
+}
+
+.queCpuIntel {
+    margin: 10vh 0;
+}
+
+.queCpuRyzen {
+    margin: 40vh 0;
+}
+
+
+
+/* queSocket ------------------------------------------------------------- */
+
+.queSocketTitulo {
+    color: #00ff40;
+    margin: 15vh 0 0 0;
+}
+
+.queSocketTitulo h1 {
+    text-align: center;
+    font-size: 10vh;
+    font-style: italic;
+}
+
+.queSocketMenu {
+    margin: 8vh auto 20vh auto;
+    width: 70%;
+}
+
+.queSocketMenuInformacao {
+    background-color: #272727;
+    padding: 10vh;
+    height: max-content;
+    text-align: center;
+    border-radius: 5vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.queSocketMenuInformacao p {
+    color: #d8d8d8;
+    width: 70%;
+    font-weight: 500;
+    text-shadow: 
+    -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+.queSocketMenuInformacao img {
+    width: 25vh;
+    height: 20vh;
+    box-shadow: 0.5vh 0.5vh 1vh #000;
+    position: absolute;
+    top: 0;
+    right: 12vh;
+}
+
+.queSocketIntel1 {
+    margin: 10vh 0;
+}
+
+.queSocketRyzen1 {
+    margin: 32vh 0;
+}
+
+.queSocketIntel2 {
+    margin: 54vh 0;
+}
+
+.queSocketRyzen2 {
+    margin: 76vh 0;
+}
+
+
+
+/* queConosco ------------------------------------------------------------- */
+
+.queConoscoTitulo {
+    color: #00ff40;
+    margin: 15vh 0 0 0;
+}
+
+.queConoscoTitulo h1 {
+    text-align: center;
+    font-size: 5vh;
+    font-style: italic;
+}
+
+.queConoscoMenu {
+    margin: 5vh auto 20vh auto;
+    width: 70%;
+}
+
+.queConoscoMenuInformacao {
+    background-color: #272727;
+    padding: 5vh 10vh 10vh 10vh;
+    text-align: center;
+    border-radius: 5vh;
+    position: relative;
+}
+
+.queConoscoMenuInformacao h2 {
+    color: #d8d8d8;
+    width: 100%;
+    font-weight: 500;
+    text-shadow: 
+    -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+.queConoscoLogo {
+    background-color: #414547;
+    margin: 5vh;
+    width: 25vh;
+    height: 22vh;
+    border-radius: 50%;
+}
+
+.queConoscoRedes {
+    box-sizing: border-box;
+    margin: 5vh auto 0 auto;
+    width: 100%;
+}
+
+.queConoscoRedes img {
+    margin: 0 5vh;
+    width: 10vh;
+    height: 8vh;
+    border-radius: 50%;
+    border: 0.4vh inset #00ff40;
+}
+
+.queConoscoRedes a {
+    display: inline-block;
+    transition: 0.2s;
+}
+
+.queConoscoRedes a:hover {
+    transform: scale(1.1);
+}
+
+
+/* queConoscoForms ------------------------------------------------------------- */
+
+.queConoscoForms {
+    background-color: #272727;
+    color: #00ff40;
+    margin: 5vh auto 0vh auto;
+    padding: 5vh 10vh 10vh 10vh;
+    width: 70%;
+    text-align: center;
+    border-radius: 5vh;
+}
+
+.queConoscoForms form {
+    padding: 1vh;
+    border: 0.2vh solid #00ff40;
+    border-radius: 5vh;
+}
+
+.queConoscoForms h2 {
+    margin: 2vh;
+}
+
+.queConoscoForms input {
+    background-color: #414547;
+    color: #fafafa;
+    margin: 2vh;
+    width: 70%;
+    height: 3.5vh;
+    text-align: center;
+    font-size: 2.5vh;
+    border-radius: 1vh;
+}
+
+.queConoscoForms input::placeholder {
+    color: #969696;
+}
+
+.queConoscoForms label {
+    font-size: 3vh;
+}
+
+.queConoscoAssunto label {
+    margin-left: 11vh;
+}
+
+.queConoscoMensagem textarea {
+    background-color: #414547;
+    color: #fafafa;
+    margin-left: 24vh;
+    width: 70%;
+    height: 20vh;
+    font-size: 2.5vh;
+    text-align: center;
+    border-radius: 1vh;
+}
+
+.queConoscoMensagem label {
+    display: block;
+    margin-left: 25vh;
+}
+
+.queConoscoForms button {
+    background-color: #414547;
+    color: #969696;
+    margin: 1vh auto 0 23.5vh;
+    padding: 1.5vh 10vh 1.5vh 10vh;
+    font-size: 2.5vh;
+    font-weight: bold;
+    border-radius: 2vh;
+    transition: 0.2s;
+}
+
+.queConoscoForms button:hover {
+    background-color: #969696;
+    color: #414547;
+    cursor: grab;
+    transform: scale(1.1);
+}
+
+
+
+/* quemSomos ------------------------------------------------------------- */
+
+.quemSomosTitulo {
+    color: #00ff40;
+    margin: 15vh 0 0 0;
+}
+
+.quemSomosTitulo h1 {
+    text-align: center;
+    font-size: 10vh;
+    font-style: italic;
+}
+
+.quemSomosMenu {
+    margin: 8vh auto 20vh auto;
+    width: 70%;
+}
+
+.quemSomosMenuInformacao {
+    background-color: #272727;
+    padding: 10vh;
+    text-align: center;
+    border-radius: 5vh;
+    position: relative;
+}
+
+.quemSomosMenuInformacao img {
+    margin: 3vh;
+    width: 30vh;
+    height: 25vh;
+    border: 0.5vh solid black;
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rearthz/finalizar-compra</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link rel="stylesheet" type="text/css" href="styles/reset.css">
+</head>
+
+<body class="aboutProdutos2CorDeFundo">
+    <header  class="aboutProdutos2CorDoCabecalho">
+        <div>
+            <a href="about.html" class="logo">
+                <img src="assets/logo.png" alt="Sapo Sheipado(logo)">
+            </a>
+
+            <nav class="cabecalhoInformacao">
+                <a href="queGpu.html">O que é uma GPU?</a>
+                <a href="queCpu.html">O que é uma CPU?</a>
+                <a href="queSocket.html">Veja as diferenças de socket</a>
+                <a href="queConosco.html">Fale conosco</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="aboutComprarProdutoForms">
+            <form method="get" action="#" enctype="multipart/form-data" class="aboutProdutos2CorDoTexto">
+                <div class="aboutComprarProdutoNome">
+                    <label class="aboutComprarProdutoLabel">Digite seu nome completo:</label>
+                    <input type="text" name="nome" placeholder="Nome" class="aboutComprarProdutoInput" required>
+                </div>
+                <div class="aboutComprarProdutoEmail">
+                    <label class="aboutComprarProdutoLabel">Digite seu email para contato:</label>
+                    <input type="email" name="email" placeholder="Email" class="aboutComprarProdutoInput" required>
+                </div>
+                <div class="aboutComprarProdutoCep">
+                    <label class="aboutComprarProdutoLabel">CEP:</label>
+                    <input type="text" name="CEP" placeholder="CEP" pattern="\d{8}" class="aboutComprarProdutoInput" required>
+                </div>
+                <div class="aboutComprarProdutoN">
+                    <label class="aboutComprarProdutoLabel">N° do local:</label>
+                    <input type="number" name="N" placeholder="N°" class="aboutComprarProdutoInput" required>
+                </div>
+                <div class="aboutComprarProdutoNumero">
+                    <label class="aboutComprarProdutoLabel">Digite seu número para contato(com DDD):</label>
+                    <input type="text" name="Numero para contato" placeholder="Número para contato" pattern="\d{11}" class="aboutComprarProdutoInput" required>
+                </div>
+                <div class="aboutComprarProdutoMetodo">
+                    <h3>Escolha seu método de pagamento:</h3>
+                    <label>
+                        <input type="radio" name="tipoDePagamento" value="c" required> Crédito
+                    </label>
+                    <label>
+                        <input type="radio" name="tipoDePagamento" value="d" required> Débito
+                    </label>
+                </div>
+                <button>Finalizar Compra</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <nav class="logos">
+            <a href="https://www.nvidia.com/pt-br/" target="_blank">
+                <img src="assets/nvidia.png" alt="Logo da Nvidia">
+            </a>
+            <a href="https://www.amd.com/pt/support/download/drivers.html" target="_blank">
+                <img src="assets/amd.png" alt="Logo da AMD">
+            </a>
+            <a href="https://www.intel.com.br/content/www/br/pt/homepage.html" target="_blank">
+                <img src="assets/intel.png" alt="Logo da Intel">
+            </a>
+            <a href="https://www.amd.com/pt/products/processors/desktops/ryzen.html" target="_blank">
+                <img src="assets/ryzen.png" alt="Logo da Ryzen">
+            </a>
+        </nav>
+    </footer>
+</body>
+
+</html>
