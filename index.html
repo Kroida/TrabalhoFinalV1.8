@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rearthz/singup</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link rel="stylesheet" type="text/css" href="styles/reset.css">
+</head>
+
+<body>
+    <header>
+        <div>
+            <a href="about.html" class="logo">
+                <img src="assets/logo.png" alt="Sapo Sheipado(logo)">
+            </a>
+    
+            <nav class="cabecalhoInformacao">
+                <a href="queGpu.html">O que é uma GPU?</a>
+                <a href="queCpu.html">O que é uma CPU?</a>
+                <a href="queSocket.html">Veja as diferenças de socket</a>
+                <a href="queConosco.html">Fale conosco</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="boasVindas">
+        <h1>
+            Seja bem-vindo ao site!
+            <img src="assets/bemVindo.png" alt="Seja bem vindo!">
+        </h1>
+    </section>
+
+    <main class="indexMenu">
+        <section class="indexMenuInformacao">
+            <h2>Cadastro</h2>
+
+            <form method="get" action="about.html" enctype="multipart/form-data">
+                <div class="indexEmail">
+                    <label class="indexLabel">Digite seu email:</label>
+                    <input type="email" name="email" placeholder="Email" class="indexInput" required>
+                </div>
+                <div class="indexSenha">
+                    <label class="indexLabel">Crie uma senha<br>(mínimo 4, máximo 8):</label>
+                    <input type="password" name="senha" placeholder="Senha" pattern=".{4,8}" class="indexInput" required>
+                </div>
+                <button>Cadastrar</button>
+            </form>
+
+            <a href="about.html" class="olhadinha">
+                Só estou dando uma olhada
+                <img src="assets/arrow.png" alt="Flecha">
+            </a>
+            <a href="quemSomos.html" class="quemSomos">Quer ver nossa loja?</a>
+        </section>
+    </main>
+
+    <footer>
+        <nav class="logos">
+            <a href="https://www.nvidia.com/pt-br/" target="_blank">
+                <img src="assets/nvidia.png" alt="Logo da Nvidia">
+            </a>
+            <a href="https://www.amd.com/pt/support/download/drivers.html" target="_blank">
+                <img src="assets/amd.png" alt="Logo da AMD">
+            </a>
+            <a href="https://www.intel.com.br/content/www/br/pt/homepage.html" target="_blank">
+                <img src="assets/intel.png" alt="Logo da Intel">
+            </a>
+            <a href="https://www.amd.com/pt/products/processors/desktops/ryzen.html" target="_blank">
+                <img src="assets/ryzen.png" alt="Logo da Ryzen">
+            </a>
+        </nav>
+    </footer>
+</body>
+
+</html>
